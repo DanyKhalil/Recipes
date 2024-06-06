@@ -1,0 +1,262 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+
+
+
+
+
+<head>
+
+    <meta charset="UTF-8" />
+    <title>Delights</title>
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+
+</head>
+
+
+
+
+
+
+
+
+
+
+
+<body>
+
+    <!-- --------------------------------------- Responsive Navigation Bar --------------------------------------- -->
+    <nav class="nav">
+        <span class="logo">Delights</span>
+        <input type="checkbox" id="check" />  <!-- this check box is for the icon of the menu -->
+        <label for="check" class="checkbtn">
+            <i> <img src="images/menu.png" alt="menu" width="50" height="50" /></i>
+        </label>
+        <ul>
+            <!-- we removed the href and cotrolled it using javascript scrollIntoView funtion -->
+            <li><a id="buttonAll" class="mayHover active">All recipes</a></li>
+            <li><a id="buttonMains" class="mayHover">Mains</a></li>
+            <li><a id="buttonSalads" class="mayHover">Salads</a></li>
+            <li><a id="buttonDesserts" class="mayHover">Desserts</a></li>
+            <li><a id="buttonContactUs" class="mayHover">Contact US</a></li>
+            <li><a id="buttonAddRecipe" class="mayHover">Add recipe</a></li>
+            <li><a><input type="text" id="searchInput" placeholder="Search for recipes..." class="tfSearch" /></a></li>
+        </ul>
+    </nav>
+
+
+
+
+
+
+
+
+
+
+    <!-- -------------------------------------------- Responsive Banner -------------------------------------------- -->
+
+    <div class="banner">
+	<span class = "text">
+        	<span class="title"> Delights  </span>
+
+        	<span class="description">
+            		Welcome to Delight, your one-stop destination for culinary inspiration
+            		and gastronomic delights! Dive into a world of mouthwatering recipes
+            		curated to tantalize your taste buds and elevate your cooking
+            		adventures. From delectable desserts to savory mains and everything in
+            		between, Delight is here to spark your creativity in the kitchen and
+            		bring joy to every mealtime. Get ready to embark on a flavorful journey
+            		that will leave you craving for more. Let the culinary magic begin!
+        	</span>
+	</span>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- ------------------------------------------------- Responsive Recipes ------------------------------------------------- -->
+
+    <div class="container"> 				<!--id="recipeBody"-->
+        <div class="recipes" id="recipes">
+            <!-- Recipe items ra7 ykuno hon  -->
+        </div>
+    </div>
+
+
+
+
+
+
+    <!-- ------------------------------------------------- Responsive Add Recipes ------------------------------------------------- -->
+
+    <div class="container" id="addRecipe">
+        <div class="addRecipe">
+	    <form class="addRecipeForm" id="addRecipeForm">
+		<span class="addRecipeTitle">Add a recipe</span>
+		
+		<span class="addRecipeTfTitle">Recipe name:</span>
+		<input type="text" id="recipeName" class="tfContactUs" placeholder="Pasta..." required>
+
+	        <span class="addRecipeTfTitle">Recipe category:</span>
+		<select id="category" class="tfContactUs" required>
+		    <option selected>Main Dish</option>
+		    <option>Salad</option>
+		    <option>Dessert</option>
+		</select>
+
+		<span class="addRecipeTfTitle">Recipe ingredients:</span>
+		<textarea id="ingredients" class="taContactUs" placeholder='Ingredients are seperated by a comma ","' required></textarea>
+
+		<span class="addRecipeTfTitle">Recipe instructions:</span>
+		<textarea id="instructions" class="taContactUs" placeholder='Instructions are seperated by a point "."' required></textarea>
+
+		<span class="addRecipeTfTitle">Recipe picture url:</span>
+		<input type="text" id="imageURL" class="tfContactUs" placeholder="http://www.img..." required>
+
+		<button type="submit" id="submitButtonAddRecipe" class="submitContactUs">Add Recipe</button>
+
+	    </form>
+
+
+	    <img src="images/cooking.png" class="sideImage">
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer>
+        <div class="contact" id="contact">
+	<div class="containerContactUs">
+            <p class="titleContactUs" >Contact Us</p>
+            <p class="descContactUs" >Do you have a problem and you would like us to assist you on? Or perhaps a few questions?</p>
+            <p class="descContactUs" > Contact us here and we will be more than happy to help you.</p>	    
+            
+	    
+
+
+
+            <div class="optionsContactUs">
+
+
+            	<div class="option">
+
+	            <p class="optionTitleContactUs">Our office</p>
+		    <hr class="hrContactUs">
+
+		    <p class="iconAndTextContactUs">
+	            	<img src="images/icon-phone.png" class="iconContactUs" />
+	            	<span class="impContactUs">+961 71 239 112</span>
+		    </p>
+
+		    <p class="iconAndTextContactUs">
+	            	<img src="images/icon-email.png" class="iconContactUs" />
+	            	<span class="impContactUs">danikhalil2004@gmail.com</span>
+		    </p>
+
+		    <p class="iconAndTextContactUs">
+	            	<img src="images/icon-location.png" class="iconContactUs" style="margin-bottom:auto"/>
+	            	<span class="impContactUs">
+				7th floor, Block D, <br>
+				Qubic Center, Street 521,<br>
+				Sin El Fil, Beirut, Lebanon
+	            	</span>
+		    </p>
+	            
+		</div>
+
+
+
+
+
+
+		<div class="option">
+
+	            	<p class="optionTitleContactUs">Send a quick message</p>
+		    	<hr class="hrContactUs">
+
+		    	<input type="text" class="tfContactUs" placeholder="Name" required>
+	            	<input type="text" class="tfContactUs" placeholder="Telephone" required>
+	            	<input type="email" class="tfContactUs" placeholder="Email" required>
+	            	<textarea class="taContactUs" placeholder="Message" required></textarea>
+		    	<button type="submit" class="submitContactUs">Send</button>
+
+		</div>
+
+
+
+
+
+
+		<div class="option">
+		    
+	            <p class="optionTitleContactUs">Keep connected</p>
+		    <hr class="hrContactUs">
+
+		    <p class="iconAndTextContactUs">
+	            	<img src="images/icon-linkedin.png" class="iconContactUs" />
+	            	<a class="impContactUs" href="https://www.linkedin.com/in/dany-al-khalil-5027a7290?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=adroid_app" target="_blank">Dany Al Khalil</a>
+		    </p>
+
+		    <p class="iconAndTextContactUs">
+	            	<img src="images/icon-twitter.png" class="iconContactUs" />
+	            	<a class="impContactUs" href="https://x.com/dany_al_khalil?t=QMcLU6dV0b-YXLMKGg8HXA&s=08" target="_blank">@dany_al_khalil</a>
+		    </p>
+
+		    <p class="iconAndTextContactUs">
+	            	<img src="images/icon-fb.png" class="iconContactUs" />
+	            	<a class="impContactUs" href="https://www.facebook.com/dani.khalil.733?mibextid=JRoKGi" target="_blank">Dany Al Khalil</a>
+		    </p>
+
+		    <p class="iconAndTextContactUs">
+	            	<img src="images/icon-inst.png" class="iconContactUs" />
+	            	<a class="impContactUs" href="" target="_blank">@dany_al_khalil</a>
+		    </p>
+	            
+		</div>
+
+
+	    
+
+            
+	    
+	    </div>
+            
+	    
+            
+	    
+	</div>
+        </div>
+
+        <script src="scripts.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+                crossorigin="anonymous"></script>
+    </footer>
+
+</body>
+</html>
